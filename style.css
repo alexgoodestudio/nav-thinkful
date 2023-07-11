@@ -1,12 +1,7 @@
 body {
     margin: 0;
   }
-  header nav ul{
-    display:flex;
-    gap:10px;
-    list-style: none;
-    padding: 0;
-  }
+
   header{
     background-color:#0B1C51;
     color: white;
@@ -14,17 +9,32 @@ body {
     display:flex;
     align-items: center;
     flex-direction: column;
-    
   }
+  
+  header nav{
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul{
+    display:flex;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+  }
+
   header nav ul li a{
     color: white;
     font-family: 'Overpass', sans-serif;
     font-family: 'Poppins', sans-serif;
     
   }
-  @media all and (min-width: 500px){
-    ul {
-   
-      flex-direction:row;
+
+  @media all and (min-width: 900px){
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 20px;
     }
   }
